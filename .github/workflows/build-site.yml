@@ -1,0 +1,41 @@
+name: Build and Deploy MkDocs Site
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        pip install mkdocs
+
+    - name: Build and Move MkDocs site
+      run: |
+        cd mkdocs
+        rm -rf ../docs
+        mkdocs build
+        mv site ../docs
+
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v7
+      with:
+        add: 'docs/*'
+        message: 'Update site'
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}

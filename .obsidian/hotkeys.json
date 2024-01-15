@@ -1,0 +1,19 @@
+{
+  "obsidian-smarter-md-hotkeys:toggle-readable-line-length": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "L"
+    }
+  ],
+  "editor:toggle-source": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "/"
+    }
+  ],
+  "editor:toggle-comments": []
+}

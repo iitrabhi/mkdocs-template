@@ -22,11 +22,11 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-# nav:
-#   - Home: index.md
-#   - Chapter 1:
-#       - Introduction : 1_chapter/1_lesson.md
-#   - Chapter 2:
-#       - Introduction : 2_chapter/1_lesson.md
-#   - Chapter 3:
-#       - Introduction : 3_chapter/1_lesson.md
+nav:
+  - Home: index.md
+  - Chapter 1:
+      - Introduction : 1_chapter/1_lesson.md
+  - Chapter 2:
+      - Introduction : 2_chapter/1_lesson.md
+  - Chapter 3:
+      - Introduction : 3_chapter/1_lesson.md

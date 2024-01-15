@@ -20,6 +20,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip install mkdocs
+        pip install pymdown-extensions
 
     - name: Build and Move MkDocs site
       run: |

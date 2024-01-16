@@ -10,7 +10,9 @@ nav:
       - Introduction : 3_chapter/1_lesson.md
 
 copyright: Site developed and maintained by <a href="https://abhigupta.io">Abhinav Gupta</a>
-
+extra_css:
+  - css/custom.css
+  
 theme:
   name: readthedocs
   highlightjs: true

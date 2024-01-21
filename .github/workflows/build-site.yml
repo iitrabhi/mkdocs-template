@@ -26,7 +26,7 @@ jobs:
 
     - name: Build and Move MkDocs site
       run: |
-        cd mkdocs
+        cd write_here
         rm -rf ../docs
         mkdocs build
         mv site ../docs

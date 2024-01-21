@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mkdocs/docs/1_chapter/1_lesson.md",
+                "file": "README.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mkdocs/docs/1_chapter/1_lesson.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mkdocs/docs/1_chapter/1_lesson.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mkdocs/docs/1_chapter/1_lesson.md"
+                "file": "README.md"
               }
             }
           },
@@ -179,6 +179,10 @@
   },
   "active": "faead026aa1841dd",
   "lastOpenFiles": [
+    "attachments/Pasted image 20240120214426.png",
+    "attachments/Pasted image 20240120214354.png",
+    "attachments/Pasted image 20240120214240.png",
+    "attachments",
     "mkdocs/docs/index.md",
     "README.md",
     "mkdocs/docs/img/logo.afdesign",
@@ -205,7 +209,6 @@
     "mkdocs/docs/1_chapter_1",
     "mkdocs/docs/1_codes/2_installation.md",
     "mkdocs/docs/1_codes/1_motivation.md",
-    "mkdocs/docs/1_codes",
     "mkdocs/docs/2_workshop/1_motivation.md",
     "mkdocs/docs/3_cyber_learning_tools/1_motivation.md",
     "mkdocs/README.md",
@@ -225,8 +228,6 @@
     "admin/7_meetings/Meeting - 2023-12-22.md",
     "paint.canvas",
     "scripts/1_validation/1_no_crevasse/readme.md",
-    "scripts/1_validation/1_no_crevasse/attachments/Pasted image 20240105155429.png",
-    "attachments/Pasted image 20240105155259.png",
     "plan.canvas",
     "3_our_implementation/2_paper_problems/1_calibration/Untitled.canvas",
     "4_latex_source/paper structure.canvas"

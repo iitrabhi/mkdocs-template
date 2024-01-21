@@ -1,5 +1,16 @@
 # Building the Website with MkDocs for GitHub Pages
 
+## Quickstart
+- Create a new repository by using the specified repository as a template.
+	   ![](attachments/Pasted%20image%2020240120214240.png)
+- Navigate to the 'Settings' of your newly created repository, then proceed to the 'Pages' section. In the 'Branch' section, select 'main' and subsequently choose 'docs.' Confirm your selection by clicking 'Save'.
+	![](attachments/Pasted%20image%2020240120214354.png)
+- Proceed to the 'Actions' tab, then select 'General.' Under the 'Workflow Permissions' section, opt for the 'Read and write permissions' by selecting the corresponding radio button.
+	![](attachments/Pasted%20image%2020240120214426.png)
+- Your website will be accessible at the URL: www.yourgithubusername.github.io/repo-name.
+- Edit the content in the `write-here` folder and commit to Git Hub. The site will get automatically updated with each commit.
+---
+
 When using MkDocs to build a website, especially for hosting on GitHub Pages, it's important to understand the directory structure and how to configure the output correctly. This section explains the process and provides a command to automate the setup.
 
 ## Directory Structure

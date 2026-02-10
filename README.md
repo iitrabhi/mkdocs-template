@@ -1,45 +1,54 @@
-# Building the Website with MkDocs for GitHub Pages
+# Documentation Website (MkDocs + GitHub Pages)
 
-## Quickstart
-- Create a new repository by using the specified repository as a template.
-	   ![](attachments/Pasted%20image%2020240120214240.png)
-- Navigate to the 'Settings' of your newly created repository, then proceed to the 'Pages' section. In the 'Branch' section, select 'main' and subsequently choose 'docs.' Confirm your selection by clicking 'Save'.
-	![](attachments/Pasted%20image%2020240120214354.png)
-- Proceed to the 'Actions' tab, then select 'General.' Under the 'Workflow Permissions' section, opt for the 'Read and write permissions' by selecting the corresponding radio button.
-	![](attachments/Pasted%20image%2020240120214426.png)
-- Your website will be accessible at the URL: www.yourgithubusername.github.io/repo-name.
-- Edit the content in the `write-here` folder and commit to Git Hub. The site will get automatically updated with each commit.
----
+For any academic or research project, **documenting the code is essential**. Clear documentation enables reproducibility, supports collaboration, and ensures that scientific ideas remain understandable beyond the original development phase.
 
-When using MkDocs to build a website, especially for hosting on GitHub Pages, it's important to understand the directory structure and how to configure the output correctly. This section explains the process and provides a command to automate the setup.
+This repository provides a **simple, reproducible documentation workflow** that connects local note-taking with automatic website deployment.
 
-## Directory Structure
-- **Source Files:** By default, MkDocs uses a directory named `docs` for documentation source files.
-- **Build Output:** The generated static site files are usually placed in a directory named `site`.
+How to use this template
+1.	Write your documentation
+	- Place all documentation files inside the `docs/` directory.
+	- Ensure `docs/mkdocs.yml` exists and is correctly configured.
+2.	Use the provided workflow
+	- The workflow file (in `.github/workflows/`) builds the site using MkDocs and deploys it to GitHub Pages on every push to main.
+3.	Enable GitHub Pages
+	- Go to `Settings` → `Pages` in your GitHub repository.
+	- Under Source, select: `Deploy from a GitHub Actions workflow`
+	- Save the settings.
+4.	Deploy
+	- Push changes to the main branch.
+	- GitHub Actions will automatically build and publish your documentation website.
 
-However, for GitHub Pages, there's a specific requirement:
-- **GitHub Pages Requirement:** GitHub Pages needs a `docs` folder at the repository's root to serve the website.
+## Result
 
-To accommodate this, our MkDocs content is stored in a separate `write_here` folder, and we use a special command to restructure the output to meet GitHub Pages' requirements.
+Your documentation will be available at: `https://<username>.github.io/<repository-name>/`
 
-### Automated Build Command
-The following command is designed to streamline the build process and ensure compatibility with GitHub Pages:
+No manual deployment steps are required after setup.
 
-```bash
-rm -rf ../docs && mkdocs build && mv site ../docs
-```
 
-Here's what each part of the command does:
+## Writing Documentation
 
-1. `rm -rf ../docs`: Removes the existing `docs` directory at the parent path to clear any previous build outputs.
-2. `mkdocs build`: Builds the static site, outputting the files into the `site` directory.
-3. `mv site ../docs`: Moves the newly generated `site` directory to replace the deleted `docs` directory at the parent path.
+All documentation is written in the `docs/` folder.
 
-This process is crucial for GitHub Pages deployments, ensuring that the `docs` folder containing the site content is correctly placed at the repository's root. This setup is particularly useful when your Markdown documentation is maintained in a separate `write_here` folder.
+- The repository is preconfigured for **Obsidian**.
+- Open the repository directly in Obsidian to start writing.
+- Write documentation as plain Markdown files.
+- Use Obsidian for structured notes, links, and incremental writing.
 
-## Handling Images (Logo and Favicon)
-MkDocs expects certain assets like the logo and favicon to be located in a specific directory:
+## Publishing Documentation
 
-- **Location:** These files should be placed under the `img` folder within the `docs` directory.
+The documentation website is built using **MkDocs** and deployed automatically to **GitHub Pages**.
 
-Ensure that your logo and favicon are correctly placed in this directory for MkDocs to reference them properly on your website.
+When you:
+- add a new chapter
+- add a new lesson or page
+- reorganize content
+
+you must update `mkdocs.yml` to include the new files in the navigation. This step is required for the content to appear on the rendered website.
+
+## Workflow Summary
+
+- Write notes in `docs/` using Obsidian
+- Commit changes to the repository
+- Update `mkdocs.yml` when adding new pages
+- Push to `main`
+- GitHub Actions builds and publishes the documentation website automatically

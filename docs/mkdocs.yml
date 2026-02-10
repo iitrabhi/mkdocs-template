@@ -1,0 +1,35 @@
+site_name: Project Documentation
+site_description: A lightweight template for documenting academic and research code with MkDocs and GitHub Pages.
+theme:
+  name: readthedocs
+  highlightjs: true
+  logo: img/logo.svg
+
+docs_dir: content
+extra_css:
+  - main.css
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: sphinx
+markdown_extensions:
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - main.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+  - Chapter 1:
+      - Introduction : 1_chapter/1_lesson.md
+  - Chapter 2:
+      - Introduction : 2_chapter/1_lesson.md
+  - Chapter 3:
+      - Introduction : 3_chapter/1_lesson.md

@@ -15,9 +15,11 @@
               "state": {
                 "file": "README.md",
                 "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
         ]
@@ -39,8 +41,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -55,7 +60,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -63,7 +70,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -94,7 +103,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for README"
             }
           },
           {
@@ -106,7 +117,9 @@
                 "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from README"
             }
           },
           {
@@ -116,8 +129,12 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
-              }
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -126,8 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
-              }
+                "file": "README.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of README"
             }
           },
           {
@@ -135,7 +157,9 @@
             "type": "leaf",
             "state": {
               "type": "calendar",
-              "state": {}
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "calendar"
             }
           },
           {
@@ -143,7 +167,9 @@
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
-              "state": {}
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "advanced-tables-toolbar"
             }
           },
           {
@@ -155,7 +181,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           }
         ],
@@ -168,23 +196,28 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": true,
       "graph:Open graph view": true,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": true,
       "command-palette:Open command palette": true,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "obsidian-kanban:Create new board": false
     }
   },
-  "active": "faead026aa1841dd",
+  "active": "01f9f9c6e9f233c4",
   "lastOpenFiles": [
+    "docs/content/img/logo.af~lock~",
+    "docs/content/index.md",
+    "src/readme.md",
+    "README.md",
     "attachments/Pasted image 20240120214426.png",
     "attachments/Pasted image 20240120214354.png",
     "attachments/Pasted image 20240120214240.png",
     "attachments",
     "mkdocs/docs/index.md",
-    "README.md",
     "mkdocs/docs/img/logo.afdesign",
     "mkdocs/docs/img/favicon.ico",
     "mkdocs/docs/img/favicon.png",
@@ -216,7 +249,6 @@
     "docs/css/fonts/fontawesome-webfont.svg",
     "docs/img/logo.svg",
     "mkdocs/site/css/fonts/fontawesome-webfont.svg",
-    "mkdocs/site/img/logo.svg",
     "admin/architecture.canvas",
     "admin/idp.md",
     "admin/7_meetings/Meeting - 2024-01-09.md",
@@ -225,9 +257,7 @@
     "admin/6_logs/2023-12-18.md",
     "admin/7_meetings/Meeting - 2024-01-11.md",
     "admin/readme.md",
-    "admin/7_meetings/Meeting - 2023-12-22.md",
     "paint.canvas",
-    "scripts/1_validation/1_no_crevasse/readme.md",
     "plan.canvas",
     "3_our_implementation/2_paper_problems/1_calibration/Untitled.canvas",
     "4_latex_source/paper structure.canvas"

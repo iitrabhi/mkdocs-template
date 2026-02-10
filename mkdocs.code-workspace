@@ -5,7 +5,6 @@
 		}
 	],
 	"settings": {
-		"markdown.styles": ["markdown.css"],
 		"markdown.preview.fontSize":16,
 		"notebook.markup.fontSize": 14,
 		"workbench.colorCustomizations": {

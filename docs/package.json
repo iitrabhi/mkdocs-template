@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "export": "mkdocs build",
+    "dev": "mkdocs serve"
+  }
+}
